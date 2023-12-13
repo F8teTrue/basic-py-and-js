@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Javascript-Kurs 2</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <h1>Javascript 2</h1>
+    <div>
+        <h3>Kan du øvelseskjøre?</h3>
+        <form class="form">
+            Skriv inn din alder: <input type="number" id="minInput">
+            Har du tatt grunnkurs: <input type="checkbox" id="checkBox">
+            <button type="button" onClick="sendInn()">Send inn</button>
+        </form>
+    </div> 
+    <div>
+        <h3>Oppgave 2</h3>
+        <form class="form">
+            Skriv inn et tall: <input type="number" id="numInput">
+            <button type="button" onClick="numPrint()">Send inn</button>
+        </form>
+    </div>
+    <div id="numList"></div>
+
+    <h3>Oppgave 3</h3>
+    <div id="personInfo"></div>
+
+    <h3>Passord Generator</h3>
+    <form calss="form">
+        Skriv inn passord som skal gjøres sterkere: <input type="text" id ="passord">
+        <button type="button" onClick="passordGen()">Send inn</button>
+    </form>
+
+
+ <script src="script.js"></script>
+</body>
+</head>
+</html>

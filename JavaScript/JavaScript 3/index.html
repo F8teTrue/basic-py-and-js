@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript-Kurs 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Terning</h3>
+    <form>
+        Skriv antall sider på terning: <input type="number" id="diceSides">
+        <button type="button" onClick="dice()">Kast terning</button>
+    </form>
+    <div id="diceResult"></div>
+
+    <h3>Temperaturkalkulator</h3>
+    Velg konverteringstype:
+    <select id="conversionType">
+        <option value="celsiusToFahrenheit">Celsius til Fahrenheit</option>
+        <option value="fahrenheitToCelsius">Fahrenheit til Celsius</option>
+    </select>
+    <br>
+    Skriv inn temperatur:
+    <input type="number" id="temperatur">
+    <button onClick="tempConvert()">Konverter</button>
+    <p>Resultat: <p id="result"></p></p>
+
+    <h3>Endre bakgrunnsfarge</h3>
+    <input type="range" id="r" min="0" max="255" value="255" onMouseMove="setToColor()">
+    <input type="range" id="g" min="0" max="255" value="255" onMouseMove="setToColor()">
+    <input type="range" id="b" min="0" max="255" value="255" onMouseMove="setToColor()">
+
+    <p>R verdi: <span id="rValue"></span></p>
+    <p>G verdi: <span id="gValue"></span></p>
+    <p>B verdi: <span id="bValue"></span></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
